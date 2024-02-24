@@ -9,9 +9,7 @@ public class MoverEnemy : MonoBehaviour
 
     private void Awake()
     {
-        string nameSpawnTag = "Spawn";
-
-        _spawner = GameObject.FindGameObjectWithTag(nameSpawnTag).GetComponent<Spawner>();
+        _spawner = FindObjectOfType<Spawner>();
 
         _direction = _spawner.DirectionEnemy;
     }

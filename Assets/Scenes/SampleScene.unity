@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b4168dd39454949884ae1b48382173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 4173428117914809644, guid: 1fb079031b4e4e9479ad8deede7dca1d, type: 3}
+  _enemyPrefab: {fileID: 6819790544303208499, guid: 1fb079031b4e4e9479ad8deede7dca1d, type: 3}
 --- !u!1 &317693556
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b4168dd39454949884ae1b48382173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 4173428117914809644, guid: 1fb079031b4e4e9479ad8deede7dca1d, type: 3}
+  _enemyPrefab: {fileID: 6819790544303208499, guid: 1fb079031b4e4e9479ad8deede7dca1d, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b4168dd39454949884ae1b48382173, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 4173428117914809644, guid: 1fb079031b4e4e9479ad8deede7dca1d, type: 3}
+  _enemyPrefab: {fileID: 6819790544303208499, guid: 1fb079031b4e4e9479ad8deede7dca1d, type: 3}
 --- !u!1 &1764621954
 GameObject:
   m_ObjectHideFlags: 0

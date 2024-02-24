@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject _enemyPrefab;
+    [SerializeField] private Transform _enemyPrefab;
 
-    private Vector3 _directionEnemy;
+    private Vector3 _directionEnemy = new Vector3(-1.9f, 0f, -0.3f);
 
-    public Vector3 DirectionEnemy => _directionEnemy = new Vector3(-1.9f, 0f, -0.3f);
+    public Vector3 DirectionEnemy => _directionEnemy;
 
-    void Start()
+    private void Start()
     {
         float minTimeWaitSpawnEnemy = 1f;
         float maxTimeWaitSpawnEnemy = 3f;
@@ -20,10 +20,6 @@ public class Spawner : MonoBehaviour
 
     private void CreateEnemy()
     {
-        float axisX = 0f;
-        float axisY = 0f;
-        float axisZ = 0f;
-
-        Instantiate(_enemyPrefab, transform.position, Quaternion.Euler(axisX, axisY, axisZ));
+        Instantiate(_enemyPrefab, transform.position, Quaternion.identity);
     }
 }
