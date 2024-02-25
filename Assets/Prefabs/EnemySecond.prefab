@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7903899152302803944}
   - component: {fileID: 8737975815844047502}
   - component: {fileID: 25392609709635545}
-  - component: {fileID: 8887184871459748811}
+  - component: {fileID: -359935622585619705}
   m_Layer: 0
   m_Name: EnemySecond
   m_TagString: Untagged
@@ -106,7 +106,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8887184871459748811
+--- !u!114 &-359935622585619705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,7 +115,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4173428117914809644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6b87e8de52a9ff40abe2ebb7a9f5ddd, type: 3}
+  m_Script: {fileID: 11500000, guid: 93f621b22db935d46aeff2c033896b85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1
+  _speed: 2
+  _spawnDetectionIndicator: 2

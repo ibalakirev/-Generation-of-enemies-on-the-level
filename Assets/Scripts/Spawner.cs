@@ -1,15 +1,11 @@
 using UnityEngine;
 
-public class SpawnerEnemies : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     [SerializeField] private Transform _enemyPrefab;
     [SerializeField] private Transform _firstPurpos;
     [SerializeField] private Transform _secondPurpos;
     [SerializeField] private Transform _thirdPurpos;
-
-    public Transform FirstPurpos => _firstPurpos;
-    public Transform SecondPurpos => _secondPurpos;
-    public Transform ThirdPurpos => _thirdPurpos;
 
     private void Start()
     {
@@ -21,12 +17,27 @@ public class SpawnerEnemies : MonoBehaviour
         InvokeRepeating(nameof(CreateEnemy), randomTimeWaitSpawnEnemy, randomTimeWaitSpawnEnemy);
     }
 
+    public Vector3 GetMoveEnemyPositionFirstFighter(Vector3 position, float speed)
+    {
+        return GetMoveEnemyPosition(position, _firstPurpos.transform.position, speed);
+    }
+
+    public Vector3 GetMoveEnemyPositionSecondFighter(Vector3 position, float speed)
+    {
+        return GetMoveEnemyPosition(position, _secondPurpos.transform.position, speed);
+    }
+
+    public Vector3 GetMoveEnemyPositionThirdFighter(Vector3 position, float speed)
+    {
+        return GetMoveEnemyPosition(position, _thirdPurpos.transform.position, speed);
+    }
+
     private void CreateEnemy()
     {
         Instantiate(_enemyPrefab, transform.position, Quaternion.identity);
     }
 
-    public Vector3 GetMoveEnemyPosition(Vector3 position, Vector3 direction, float speed)
+    private Vector3 GetMoveEnemyPosition(Vector3 position, Vector3 direction, float speed)
     {
         return Vector3.MoveTowards(position, direction, speed * Time.deltaTime);
     }

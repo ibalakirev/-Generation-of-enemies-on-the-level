@@ -195,7 +195,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 311407032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cab4059f2b1e104b8bf2d816594ff0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 977d26d83770e6d48bb3d67ec89c1aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 6819790544303208499, guid: bc3f759995beeea4c8747a4b3b2672fb, type: 3}
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 317693556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cab4059f2b1e104b8bf2d816594ff0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 977d26d83770e6d48bb3d67ec89c1aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 6819790544303208499, guid: 19b2b3b97feb20d4b9e8d9a3ed94aa1b, type: 3}
@@ -970,7 +970,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1117310751}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cab4059f2b1e104b8bf2d816594ff0b, type: 3}
+  m_Script: {fileID: 11500000, guid: 977d26d83770e6d48bb3d67ec89c1aa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 6819790544303208499, guid: 1fb079031b4e4e9479ad8deede7dca1d, type: 3}
