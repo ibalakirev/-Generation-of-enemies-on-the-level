@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7903899152302803944}
   - component: {fileID: 8737975815844047502}
   - component: {fileID: 25392609709635545}
-  - component: {fileID: 5926848571883065889}
+  - component: {fileID: -5445821098108448062}
   m_Layer: 0
   m_Name: EnemyFirst
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4173428117914809644}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8936684, y: 0.9161573, z: 0}
+  m_LocalPosition: {x: -2.9526935, y: 2, z: -11.661411}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106,7 +106,7 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5926848571883065889
+--- !u!114 &-5445821098108448062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,8 +115,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4173428117914809644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93f621b22db935d46aeff2c033896b85, type: 3}
+  m_Script: {fileID: 11500000, guid: a0951c46ba0438948ae3421719703386, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 2
-  _spawnDetectionIndicator: 1

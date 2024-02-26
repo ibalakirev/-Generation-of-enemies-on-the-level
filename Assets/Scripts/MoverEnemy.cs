@@ -3,34 +3,21 @@ using UnityEngine;
 public class MoverEnemy : MonoBehaviour
 {
     [SerializeField] private float _speed;
-    [SerializeField, Range(1f, 3f)] private int _spawnDetectionIndicator;
 
-    private Spawner _spawner;
+    private Transform _targetPosition;
 
-    private void Awake()
+    private void Update()
     {
-        _spawner = FindObjectOfType<Spawner>();
+        Move();
     }
 
-    private void FixedUpdate()
+    public void AcceptPosition(Transform purpos)
     {
-        int numberIndicatorFirstSpawn = 1;
-        int numberIndicatorSecondSpawn = 2;
-        int numberIndicatorThirdSpawn = 3;
+        _targetPosition = purpos;
+    }
 
-        if (_spawnDetectionIndicator == numberIndicatorFirstSpawn)
-        {
-            transform.position = _spawner.GetMoveEnemyPositionFirstFighter(transform.position, _speed);
-        }
-
-        if (_spawnDetectionIndicator == numberIndicatorSecondSpawn)
-        {
-            transform.position = _spawner.GetMoveEnemyPositionSecondFighter(transform.position, _speed);
-        }
-
-        if (_spawnDetectionIndicator == numberIndicatorThirdSpawn)
-        {
-            transform.position = _spawner.GetMoveEnemyPositionThirdFighter(transform.position, _speed);
-        }
+    public void Move()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, _targetPosition.transform.position, _speed * Time.deltaTime);
     }
 }

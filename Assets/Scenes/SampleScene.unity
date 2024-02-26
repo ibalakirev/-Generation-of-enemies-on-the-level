@@ -195,13 +195,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 311407032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 977d26d83770e6d48bb3d67ec89c1aa2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c16b65b199d7cd46afc7f6f98a27292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 6819790544303208499, guid: bc3f759995beeea4c8747a4b3b2672fb, type: 3}
-  _firstPurpos: {fileID: 861606458}
-  _secondPurpos: {fileID: 482549296}
-  _thirdPurpos: {fileID: 627954189}
+  _enemyPrefab: {fileID: -3216752961897958934, guid: bc3f759995beeea4c8747a4b3b2672fb, type: 3}
+  _target: {fileID: 482549296}
 --- !u!1 &317693556
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,13 +241,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 317693556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 977d26d83770e6d48bb3d67ec89c1aa2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c16b65b199d7cd46afc7f6f98a27292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 6819790544303208499, guid: 19b2b3b97feb20d4b9e8d9a3ed94aa1b, type: 3}
-  _firstPurpos: {fileID: 861606458}
-  _secondPurpos: {fileID: 482549296}
-  _thirdPurpos: {fileID: 627954189}
+  _enemyPrefab: {fileID: -3100711128980503611, guid: 19b2b3b97feb20d4b9e8d9a3ed94aa1b, type: 3}
+  _target: {fileID: 627954189}
 --- !u!1 &410188493
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +322,7 @@ GameObject:
   - component: {fileID: 482549297}
   - component: {fileID: 482549300}
   m_Layer: 0
-  m_Name: PurposSecond
+  m_Name: SecondTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -448,7 +444,7 @@ GameObject:
   - component: {fileID: 627954190}
   - component: {fileID: 627954193}
   m_Layer: 0
-  m_Name: PurposThird
+  m_Name: ThirdTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -664,7 +660,7 @@ GameObject:
   - component: {fileID: 861606459}
   - component: {fileID: 861606462}
   m_Layer: 0
-  m_Name: PurposFirst
+  m_Name: FirstTarget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -970,13 +966,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1117310751}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 977d26d83770e6d48bb3d67ec89c1aa2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c16b65b199d7cd46afc7f6f98a27292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPrefab: {fileID: 6819790544303208499, guid: 1fb079031b4e4e9479ad8deede7dca1d, type: 3}
-  _firstPurpos: {fileID: 861606458}
-  _secondPurpos: {fileID: 482549296}
-  _thirdPurpos: {fileID: 627954189}
+  _enemyPrefab: {fileID: -5445821098108448062, guid: 1fb079031b4e4e9479ad8deede7dca1d, type: 3}
+  _target: {fileID: 861606458}
 --- !u!1 &1269802063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,7 +1049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1466889776}
   m_Layer: 0
-  m_Name: Purposes
+  m_Name: Targets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

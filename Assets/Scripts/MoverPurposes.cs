@@ -14,10 +14,10 @@ public class MoverPurpos : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Patrolling();
+        Patrol();
     }
 
-    private void Patrolling()
+    private void Patrol()
     {
         float minDistance = 0.2f;
 
