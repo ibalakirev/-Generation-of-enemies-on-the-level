@@ -23,7 +23,7 @@ public class SpawnerEnemies : MonoBehaviour
         return Instantiate(_enemyPrefab, transform.position, Quaternion.identity);
     }
 
-    private void SendPositionPurpos(MoverEnemy enemy)
+    private void SendPositionTarget(MoverEnemy enemy)
     {
         enemy.AcceptPosition(_target);
     }
@@ -36,7 +36,7 @@ public class SpawnerEnemies : MonoBehaviour
         {
             enemy = CreateEnemy();
 
-            SendPositionPurpos(enemy);
+            SendPositionTarget(enemy);
 
             yield return new WaitForSeconds(timeWait);
         }

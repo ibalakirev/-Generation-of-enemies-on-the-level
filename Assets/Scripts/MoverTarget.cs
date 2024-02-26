@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MoverPurpos : MonoBehaviour
+public class MoverTarget : MonoBehaviour
 {
     [SerializeField] private Transform[] _patrolPoints;
     [SerializeField] private float _speed;
