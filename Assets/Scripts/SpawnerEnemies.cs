@@ -30,15 +30,17 @@ public class SpawnerEnemies : MonoBehaviour
 
     private IEnumerator WaitingEnemiesCreated(float timeWait, MoverEnemy enemy)
     {
-        bool isWorkCreaterEnemy = true;
+        bool isWorkCreateEmemies = true;
 
-        while (isWorkCreaterEnemy)
+        var wait = new WaitForSeconds(timeWait);
+
+        while (isWorkCreateEmemies)
         {
             enemy = CreateEnemy();
 
             SendPositionTarget(enemy);
 
-            yield return new WaitForSeconds(timeWait);
+            yield return wait;
         }
     }
 }
